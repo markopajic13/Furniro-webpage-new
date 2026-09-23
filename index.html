@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furniro</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" />
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="variables.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header grid">
+      <a href="index.html" class="site-header__logo">
+        <img src="content/site-logo.png" alt="" />
+        <span>Furniro</span>
+      </a>
+      <nav class="site-header__nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="site-header__icons">
+        <a href="#">
+          <img src="content/mdi_account-alert-outline.svg" alt="account information" />
+        </a>
+        <a href="#">
+          <img src="content/akar-icons_search.svg" alt="search" />
+        </a>
+        <a href="#">
+          <img src="content/akar-icons_heart.svg" alt="wishlist" />
+        </a>
+        <a href="#">
+          <img src="content/ant-design_shopping-cart-outlined.svg" alt="shopping cart" />
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero grid">
+        <div class="hero__card">
+          <p class="hero__eyebrow">New Arrival</p>
+          <h1 class="hero__title">Discover Our New Collection</h1>
+          <p class="hero__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.
+          </p>
+          <a href="#" class="btn hero__button">Buy now</a>
+        </div>
+      </section>
+
+      <section class="range grid">
+        <h2 class="range__title">Browse the Range</h2>
+        <p class="range__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <div class="range__grid">
+          <article class="range__card">
+            <img src="content/dining.png" alt="photo of dining area" />
+            <h3 class="range__card-title">Dining</h3>
+          </article>
+          <article class="range__card">
+            <img src="content/Image-living room.png" alt="photo of living area" />
+            <h3 class="range__card-title">Living</h3>
+          </article>
+          <article class="range__card">
+            <img src="content/bedroom.png" alt="photo of bedroom area" />
+            <h3 class="range__card-title">Bedroom</h3>
+          </article>
+        </div>
+      </section>
+
+      <section class="products grid">
+        <h2>Our Products</h2>
+        <div class="products__grid subgrid">
+          <article class="product-card">
+            <div class="product-card__media">
+              <img src="content/syltherine.png" alt="Syltherine dining chair" />
+              <span class="product-card__badge product-card__badge--sale">-30%</span>
+            </div>
+            <h3 class="product-card__title">Syltherine</h3>
+            <p class="product-card__desc">Stylish cafe chair</p>
+            <p class="product-card__price">
+              Rp 2.500.000
+              <span class="product-card__price-old">Rp 3.500.000</span>
+            </p>
+          </article>
+          <article class="product-card">
+            <div class="product-card__media">
+              <img src="content/leviosa.png" alt="Leviosa dining chair" />
+            </div>
+            <h3 class="product-card__title">Leviosa</h3>
+            <p class="product-card__desc">Stylish cafe chair</p>
+            <p class="product-card__price">Rp 2.500.000</p>
+          </article>
+          <article class="product-card">
+            <div class="product-card__media">
+              <img src="content/lolito.png" alt="Luxary big sofa" />
+              <span class="product-card__badge product-card__badge--sale">-50%</span>
+            </div>
+            <h3 class="product-card__title">Lolito</h3>
+            <p class="product-card__desc">Luxary big sofa</p>
+            <p class="product-card__price">
+              Rp 7.000.000
+              <span class="product-card__price-old">Rp 14.000.000</span>
+            </p>
+          </article>
+          <article class="product-card">
+            <div class="product-card__media">
+              <img src="content/respira.png" alt="raspira bar table and stool" />
+              <span class="product-card__badge product-card__badge--new">New</span>
+            </div>
+            <h3 class="product-card__title">Respira</h3>
+            <p class="product-card__desc">Outdoor bar table and stool</p>
+            <p class="product-card__price">Rp 500.000</p>
+          </article>
+          <article class="product-card">
+            <div class="product-card__media">
+              <img src="content/grifo.png" alt="grifo night lamp" />
+            </div>
+            <h3 class="product-card__title">Grifo</h3>
+            <p class="product-card__desc">Night lamp</p>
+            <p class="product-card__price">Rp 1.500.000</p>
+          </article>
+          <article class="product-card">
+            <div class="product-card__media">
+              <img src="content/muggo.png" alt="Muggo small mug" />
+              <span class="product-card__badge product-card__badge--new">New</span>
+            </div>
+            <h3 class="product-card__title">Muggo</h3>
+            <p class="product-card__desc">Small mug</p>
+            <p class="product-card__price">Rp 150.000</p>
+          </article>
+          <article class="product-card">
+            <div class="product-card__media">
+              <img src="content/pingkey.png" alt="pingkey bed set" />
+              <span class="product-card__badge product-card__badge--sale">-50%</span>
+            </div>
+            <h3 class="product-card__title">Pingky</h3>
+            <p class="product-card__desc">Cute bed set</p>
+            <p class="product-card__price">
+              Rp 7.000.000
+              <span class="product-card__price-old">Rp 14.000.000</span>
+            </p>
+          </article>
+          <article class="product-card">
+            <div class="product-card__media">
+              <img src="content/potty.png" alt="Potty flower pot" />
+              <span class="product-card__badge product-card__badge--new">New</span>
+            </div>
+            <h3 class="product-card__title">Potty</h3>
+            <p class="product-card__desc">Minimalist flower pot</p>
+            <p class="product-card__price">Rp 500.000</p>
+          </article>
+        </div>
+        <a href="#" class="btn btn--outline products__button">Show More</a>
+      </section>
+
+      <section class="rooms">
+        <div class="rooms__intro">
+          <h2 class="rooms__title">50+ Beautiful rooms inspiration</h2>
+          <p class="rooms__text">Our designer already made a lot of beautiful prototipe of rooms that inspire you</p>
+          <a href="#" class="btn btn--outline rooms__button">Explore More</a>
+        </div>
+
+        <div class="rooms__slide rooms__slide--featured">
+          <img src="content/inner-peace.png" alt="Bedroom with a framed art gallery wall" />
+          <div class="rooms__caption">
+            <p class="rooms__caption-eyebrow">01 — Bed Room</p>
+            <h3 class="rooms__caption-title">Inner Peace</h3>
+            <a href="#" class="rooms__caption-link" aria-label="View Inner Peace room">→</a>
+          </div>
+        </div>
+
+        <div class="rooms__slide rooms__slide--next">
+          <img src="content/inner-peace1.png" alt="Bright dining nook with wooden chairs" />
+        </div>
+
+        <div class="rooms__slide rooms__slide--peek">
+          <img src="content/inner-peace2.png" alt="Oak dresser with a vase and desk lamp" />
+        </div>
+
+        <button type="button" class="rooms__nav" aria-label="Next room">›</button>
+
+        <ol class="rooms__dots">
+          <li class="rooms__dot rooms__dot--active"></li>
+          <li class="rooms__dot"></li>
+          <li class="rooms__dot"></li>
+          <li class="rooms__dot"></li>
+        </ol>
+      </section>
+
+      <section class="setup grid">
+        <p class="setup__label">Share your setup with</p>
+        <h2 class="setup__hashtag">#FuniroFurniture</h2>
+
+        <div class="setup__gallery">
+          <img src="content/setup1.png" alt="Shelving unit with books and plants" />
+          <img src="content/setup2.png" alt="Vintage velvet armchair" />
+          <img src="content/setup3.png" alt="Laptop and vintage radio on a desk" />
+          <img src="content/setup4.png" alt="Vase with flowers and a camera on wooden stools" />
+          <img src="content/setup5.png" alt="Dining table with chairs under a pendant light" />
+          <img src="content/setup6.png" alt="Bed with sitting place" />
+          <img src="content/setup7.png" alt="Framed picture and vase on a marble shelf" />
+          <img src="content/setup8.png" alt="Dining table against an exposed brick wall" />
+          <img src="content/setup9.png" alt="Kitchen shelf with hanging utensils" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer grid">
+      <div class="site-footer__top subgrid">
+        <div class="site-footer__brand">
+          <p class="site-footer__logo">Furniro.</p>
+          <address>400 University Drive Suite 200 Coral Gables, FL 33134 USA</address>
+        </div>
+
+        <nav class="site-footer__links" aria-label="Footer links">
+          <h3 class="site-footer__title">Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav class="site-footer__help" aria-label="Help links">
+          <h3 class="site-footer__title">Help</h3>
+          <ul>
+            <li><a href="#">Payment Options</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Privacy Policies</a></li>
+          </ul>
+        </nav>
+
+        <form class="site-footer__newsletter">
+          <h3 class="site-footer__title">Newsletter</h3>
+          <label for="newsletter-email" class="visually-hidden"> Email address </label>
+          <input type="email" id="newsletter-email" name="email" placeholder="Enter Your Email Address" required />
+          <button type="submit">SUBSCRIBE</button>
+        </form>
+      </div>
+
+      <p class="site-footer__copyright">2023 Furniro. All rights reserved</p>
+    </footer>
+  </body>
+</html>
