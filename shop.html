@@ -69,10 +69,21 @@
         </div>
 
         <div class="shop-bar__sort">
-          <span class="shop-bar__label">Show</span>
-          <span class="shop-bar__value">16</span>
-          <span class="shop-bar__label">Short by</span>
-          <span class="shop-bar__value shop-bar__value--wide">Default</span>
+          <label class="shop-bar__label" for="shop-show">Show</label>
+          <select class="shop-bar__select" id="shop-show" name="show">
+            <option value="8">8</option>
+            <option value="16" selected>16</option>
+            <option value="24">24</option>
+            <option value="32">32</option>
+          </select>
+
+          <label class="shop-bar__label" for="shop-sort">Short by</label>
+          <select class="shop-bar__select shop-bar__select--wide" id="shop-sort" name="sort">
+            <option value="default" selected>Default</option>
+            <option value="name">Name</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+          </select>
         </div>
       </section>
 
