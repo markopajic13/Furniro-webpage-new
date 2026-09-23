@@ -22,7 +22,7 @@
         <img src="content/site-logo.png" alt="" />
         <span>Furniro</span>
       </a>
-      <nav class="site-header__nav" aria-label="Main">
+      <nav class="site-header__nav">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="shop.html">Shop</a></li>
@@ -47,15 +47,15 @@
     </header>
 
     <main>
-      <nav class="breadcrumb" aria-label="Breadcrumb">
+      <nav class="breadcrumb">
         <a href="index.html">Home</a>
         <img src="content/arrow-right.svg" alt="" />
         <a href="shop.html">Shop</a>
         <img src="content/arrow-right.svg" alt="" />
-        <span class="breadcrumb__current" aria-current="page">Asgaard sofa</span>
+        <span class="breadcrumb__current">Asgaard sofa</span>
       </nav>
 
-      <section class="product-detail grid" aria-labelledby="product-title">
+      <section class="product-detail grid">
         <div class="product-gallery">
           <div class="product-gallery__thumbnails">
             <button type="button" class="product-gallery__thumbnail">
@@ -82,7 +82,8 @@
           <p class="single-product__price">Rs. 250,000.00</p>
 
           <div class="single-product__rating">
-            <span class="single-product__stars" role="img" aria-label="Rated 4.5 out of 5">
+            <span class="single-product__stars">
+              <span class="visually-hidden">Rated 4.5 out of 5</span>
               <img src="content/star.svg" alt="" />
               <img src="content/star.svg" alt="" />
               <img src="content/star.svg" alt="" />
@@ -98,38 +99,32 @@
           </p>
 
           <p id="size-label" class="single-product__label">Size</p>
-          <div class="single-product__sizes" role="group" aria-labelledby="size-label">
-            <button type="button" class="single-product__size single-product__size--active" aria-pressed="true">
-              L
-            </button>
-            <button type="button" class="single-product__size" aria-pressed="false">XL</button>
-            <button type="button" class="single-product__size" aria-pressed="false">XS</button>
+          <div class="single-product__sizes">
+            <button type="button" class="single-product__size single-product__size--active">L</button>
+            <button type="button" class="single-product__size">XL</button>
+            <button type="button" class="single-product__size">XS</button>
           </div>
 
           <p id="color-label" class="single-product__label">Color</p>
-          <div class="single-product__colors" role="group" aria-labelledby="color-label">
+          <div class="single-product__colors">
             <button
               type="button"
-              class="single-product__color single-product__color--purple"
-              aria-label="Purple"
-              aria-pressed="true"></button>
-            <button
-              type="button"
-              class="single-product__color single-product__color--black"
-              aria-label="Black"
-              aria-pressed="false"></button>
-            <button
-              type="button"
-              class="single-product__color single-product__color--gold"
-              aria-label="Gold"
-              aria-pressed="false"></button>
+              class="single-product__color single-product__color--purple single-product__color--active">
+              <span class="visually-hidden">Purple</span>
+            </button>
+            <button type="button" class="single-product__color single-product__color--black">
+              <span class="visually-hidden">Black</span>
+            </button>
+            <button type="button" class="single-product__color single-product__color--gold">
+              <span class="visually-hidden">Gold</span>
+            </button>
           </div>
 
           <div class="single-product__actions">
             <div class="single-product__quantity">
-              <button type="button" aria-label="Decrease quantity">-</button>
+              <button type="button">-</button>
               <span>1</span>
-              <button type="button" aria-label="Increase quantity">+</button>
+              <button type="button">+</button>
             </div>
             <button type="button" class="single-product__button">Add To Cart</button>
             <button type="button" class="single-product__button">+ Compare</button>
@@ -154,13 +149,11 @@
         </div>
       </section>
 
-      <section class="product-info grid" aria-label="Product information">
+      <section class="product-info grid">
         <div class="product-info__tabs">
-          <button type="button" class="product-info__tab product-info__tab--active" aria-pressed="true">
-            Description
-          </button>
-          <button type="button" class="product-info__tab" aria-pressed="false">Additional Information</button>
-          <button type="button" class="product-info__tab" aria-pressed="false">Reviews [5]</button>
+          <button type="button" class="product-info__tab product-info__tab--active">Description</button>
+          <button type="button" class="product-info__tab">Additional Information</button>
+          <button type="button" class="product-info__tab">Reviews [5]</button>
         </div>
 
         <div class="product-info__text">
@@ -191,7 +184,7 @@
         <div class="related-products__grid subgrid">
           <article class="product-card">
             <div class="product-card__media">
-              <img src="content/syltherine.png" alt="Syltherine stylish cafe chair" />
+              <img src="content/syltherine.png" alt="White table with grey stools under a crystal chandelier" />
               <span class="product-card__badge product-card__badge--sale">-30%</span>
               <div class="product-card__actions">
                 <button type="button" class="product-card__add">Add to cart</button>
@@ -202,7 +195,9 @@
                 </div>
               </div>
             </div>
-            <h3 class="product-card__title">Syltherine</h3>
+            <h3 class="product-card__title">
+              <a href="product.html">Syltherine</a>
+            </h3>
             <p class="product-card__desc">Stylish cafe chair</p>
             <p class="product-card__price">
               Rp 2.500.000
@@ -211,7 +206,7 @@
           </article>
           <article class="product-card">
             <div class="product-card__media">
-              <img src="content/leviosa.png" alt="Leviosa stylish cafe chair" />
+              <img src="content/leviosa.png" alt="White molded armchair with light wooden legs" />
               <div class="product-card__actions">
                 <button type="button" class="product-card__add">Add to cart</button>
                 <div class="product-card__extras">
@@ -221,13 +216,15 @@
                 </div>
               </div>
             </div>
-            <h3 class="product-card__title">Leviosa</h3>
+            <h3 class="product-card__title">
+              <a href="product.html">Leviosa</a>
+            </h3>
             <p class="product-card__desc">Stylish cafe chair</p>
             <p class="product-card__price">Rp 2.500.000</p>
           </article>
           <article class="product-card">
             <div class="product-card__media">
-              <img src="content/lolito.png" alt="Lolito luxury big sofa" />
+              <img src="content/lolito.png" alt="Cream button-tufted sofa" />
               <span class="product-card__badge product-card__badge--sale">-50%</span>
               <div class="product-card__actions">
                 <button type="button" class="product-card__add">Add to cart</button>
@@ -238,7 +235,9 @@
                 </div>
               </div>
             </div>
-            <h3 class="product-card__title">Lolito</h3>
+            <h3 class="product-card__title">
+              <a href="product.html">Lolito</a>
+            </h3>
             <p class="product-card__desc">Luxury big sofa</p>
             <p class="product-card__price">
               Rp 7.000.000
@@ -247,7 +246,7 @@
           </article>
           <article class="product-card">
             <div class="product-card__media">
-              <img src="content/respira.png" alt="Respira outdoor bar table and stool" />
+              <img src="content/respira.png" alt="Grey corner sofa with wooden nesting coffee tables" />
               <span class="product-card__badge product-card__badge--new">New</span>
               <div class="product-card__actions">
                 <button type="button" class="product-card__add">Add to cart</button>
@@ -258,7 +257,9 @@
                 </div>
               </div>
             </div>
-            <h3 class="product-card__title">Respira</h3>
+            <h3 class="product-card__title">
+              <a href="product.html">Respira</a>
+            </h3>
             <p class="product-card__desc">Outdoor bar table and stool</p>
             <p class="product-card__price">Rp 500.000</p>
           </article>
@@ -275,7 +276,7 @@
           <address>400 University Drive Suite 200 Coral Gables, FL 33134 USA</address>
         </div>
 
-        <nav class="site-footer__links" aria-label="Footer links">
+        <nav class="site-footer__links">
           <h3 class="site-footer__title">Links</h3>
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -285,7 +286,7 @@
           </ul>
         </nav>
 
-        <nav class="site-footer__help" aria-label="Help links">
+        <nav class="site-footer__help">
           <h3 class="site-footer__title">Help</h3>
           <ul>
             <li><a href="#">Payment Options</a></li>
@@ -298,7 +299,7 @@
           <h3 class="site-footer__title">Newsletter</h3>
           <label for="newsletter-email" class="visually-hidden"> Email address </label>
           <input type="email" id="newsletter-email" name="email" placeholder="Enter Your Email Address" required />
-          <button type="submit">SUBSCRIBE</button>
+          <button type="submit">Subscribe</button>
         </form>
       </div>
 
