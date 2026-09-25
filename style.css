@@ -211,6 +211,35 @@ body {
   font-weight: 600;
 }
 
+/* ===== benefits ===== */
+.benefits {
+  margin-top: 5rem;
+  padding-block: 3.25rem;
+  background-color: var(--color-beige);
+}
+
+.benefit {
+  grid-column: span 3;
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.benefit__icon {
+  width: 3.75rem;
+}
+
+.benefit__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
+.benefit__text {
+  font-weight: 500;
+  color: var(--color-gray);
+}
+
 /* ===== Footer ===== */
 
 .site-footer {
