@@ -1,0 +1,143 @@
+.page-banner {
+  background: url(content/shop.png) center / cover;
+  height: 20.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-banner__title {
+  font-size: 3rem;
+  font-weight: 500;
+  align-items: center;
+}
+
+/* ===== search =====*/
+.shop-bar {
+  padding-block: 1.375rem;
+  background-color: var(--color-beige);
+}
+
+.shop-bar__browse {
+  grid-column: 1 / 7;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.shop-bar__tools {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-right: 2rem;
+  border-right: 0.125rem solid var(--color-gray-light);
+}
+
+.shop-bar__filter,
+.shop-bar__view {
+  border: none;
+  background: none;
+}
+
+.shop-bar__filter {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.shop-bar__sort {
+  grid-column: 7 / -1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.shop-bar__label {
+  font-size: 1.25rem;
+}
+
+.shop-bar__select .shop-bar__label {
+  margin-left: 0.75rem;
+}
+
+.shop-bar__select {
+  height: 3.5rem;
+  padding-inline: 1rem;
+  border: none;
+  background-color: white;
+  font-size: 1.25rem;
+  color: var(--color-gray-light);
+  appearance: none;
+}
+
+.shop-bar__select--wide {
+  width: 11.75rem;
+}
+
+/* ===== products =====*/
+.shop-products {
+  margin-top: 4rem;
+}
+
+/* ===== pagination =====*/
+
+.pagination {
+  margin-top: 4.375rem;
+}
+
+.pagination ol {
+  display: flex;
+  justify-content: center;
+  gap: 2.375rem;
+}
+
+.pagination__link {
+  display: grid;
+  place-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 0.625rem;
+  background-color: var(--color-beige);
+  font-size: 1.25rem;
+}
+
+.pagination__link--active {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.pagination__link--next {
+  width: 6.125rem;
+}
+
+/* ===== benefits ===== */
+.benefits {
+  margin-top: 5rem;
+  padding-block: 3.25rem;
+  background-color: var(--color-beige);
+}
+
+.benefit {
+  grid-column: span 3;
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.benefit__icon {
+  width: 3.75rem;
+}
+
+.benefit__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
+.benefit__text {
+  font-weight: 500;
+  color: var(--color-gray);
+}

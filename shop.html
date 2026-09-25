@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" />
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap"
+    />
 
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="variables.css" />
@@ -51,39 +52,41 @@
         <h1 class="page-banner__title">Shop</h1>
       </section>
 
-      <section class="shop-bar grid">
-        <div class="shop-bar__browse">
-          <div class="shop-bar__tools">
-            <button type="button" class="shop-bar__filter">
-              <img src="content/filter.svg" alt="" />
-              Filter
-            </button>
-            <button type="button" class="shop-bar__view shop-bar__view--active">
-              <img src="content/view-grid.svg" alt="Grid view" />
-            </button>
-            <button type="button" class="shop-bar__view">
-              <img src="content/view-list.svg" alt="List view" />
-            </button>
+      <section class="shop-bar">
+        <div class="shop-bar__inner grid">
+          <div class="shop-bar__browse">
+            <div class="shop-bar__tools">
+              <button type="button" class="shop-bar__filter">
+                <img src="content/filter.svg" alt="" />
+                Filter
+              </button>
+              <button type="button" class="shop-bar__view shop-bar__view--active">
+                <img src="content/view-grid.svg" alt="Grid view" />
+              </button>
+              <button type="button" class="shop-bar__view">
+                <img src="content/view-list.svg" alt="List view" />
+              </button>
+            </div>
+            <p class="shop-bar__results">Showing 1–16 of 32 results</p>
           </div>
-          <p class="shop-bar__results">Showing 1–16 of 32 results</p>
-        </div>
 
-        <div class="shop-bar__sort">
-          <label class="shop-bar__label" for="shop-show">Show</label>
-          <select class="shop-bar__select" id="shop-show" name="show">
-            <option value="8">8</option>
-            <option value="16" selected>16</option>
-            <option value="24">24</option>
-            <option value="32">32</option>
-          </select>
+          <div class="shop-bar__sort">
+            <label class="shop-bar__label" for="shop-show">Show</label>
+            <select class="shop-bar__select" id="shop-show" name="show">
+              <option value="8">8</option>
+              <option value="16" selected>16</option>
+              <option value="24">24</option>
+              <option value="32">32</option>
+            </select>
 
-          <label class="shop-bar__label" for="shop-sort">Short by</label>
-          <select class="shop-bar__select shop-bar__select--wide" id="shop-sort" name="sort">
-            <option value="default" selected>Default</option>
-            <option value="name">Name</option>
-            <option value="price-asc">Price: Low to High</option>
-            <option value="price-desc">Price: High to Low</option>
-          </select>
+            <label class="shop-bar__label" for="shop-sort">Short by</label>
+            <select class="shop-bar__select shop-bar__select--wide" id="shop-sort" name="sort">
+              <option value="default" selected>Default</option>
+              <option value="name">Name</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+            </select>
+          </div>
         </div>
       </section>
 
@@ -430,40 +433,42 @@
         </nav>
       </section>
 
-      <section class="benefits grid">
+      <section class="benefits">
         <h2 class="visually-hidden">Why shop with Furniro</h2>
 
-        <article class="benefit">
-          <img src="content/trophy.svg" alt="" class="benefit__icon" />
-          <div>
-            <h3 class="benefit__title">High Quality</h3>
-            <p class="benefit__text">crafted from top materials</p>
-          </div>
-        </article>
+        <div class="benefits__inner grid">
+          <article class="benefit">
+            <img src="content/trophy.svg" alt="" class="benefit__icon" />
+            <div>
+              <h3 class="benefit__title">High Quality</h3>
+              <p class="benefit__text">crafted from top materials</p>
+            </div>
+          </article>
 
-        <article class="benefit">
-          <img src="content/guarantee.svg" alt="" class="benefit__icon" />
-          <div>
-            <h3 class="benefit__title">Warranty Protection</h3>
-            <p class="benefit__text">Over 2 years</p>
-          </div>
-        </article>
+          <article class="benefit">
+            <img src="content/guarantee.svg" alt="" class="benefit__icon" />
+            <div>
+              <h3 class="benefit__title">Warranty Protection</h3>
+              <p class="benefit__text">Over 2 years</p>
+            </div>
+          </article>
 
-        <article class="benefit">
-          <img src="content/shipping.svg" alt="" class="benefit__icon" />
-          <div>
-            <h3 class="benefit__title">Free Shipping</h3>
-            <p class="benefit__text">Order over 150 $</p>
-          </div>
-        </article>
+          <article class="benefit">
+            <img src="content/shipping.svg" alt="" class="benefit__icon" />
+            <div>
+              <h3 class="benefit__title">Free Shipping</h3>
+              <p class="benefit__text">Order over 150 $</p>
+            </div>
+          </article>
 
-        <article class="benefit">
-          <img src="content/customer-support.svg" alt="" class="benefit__icon" />
-          <div>
-            <h3 class="benefit__title">24 / 7 Support</h3>
-            <p class="benefit__text">Dedicated support</p>
-          </div>
-        </article>
+          <article class="benefit">
+            <img src="content/customer-support.svg" alt="" class="benefit__icon" />
+            <div>
+              <h3 class="benefit__title">24 / 7 Support</h3>
+              <p class="benefit__text">Dedicated support</p>
+            </div>
+          </article>
+        </div>
       </section>
     </main>
 
