@@ -157,6 +157,41 @@ body {
   color: var(--color-gray);
 }
 
+.product-card__actions {
+  position: absolute;
+  inset: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: rgb(58 58 58 / 0.72);
+}
+
+.product-card:hover .product-card__actions {
+  display: flex;
+}
+
+.product-card__add {
+  padding: 0.75rem 3.5rem;
+  border: none;
+  background-color: white;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.product-card__extras {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.product-card__extras button {
+  border: none;
+  background: none;
+  color: white;
+  font-weight: 600;
+}
+
 /* ===== Footer ===== */
 
 .site-footer {
