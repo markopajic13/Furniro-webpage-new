@@ -75,6 +75,32 @@ body {
   gap: 2.75rem;
 }
 
+/* ===== Page banner ===== */
+
+.page-banner {
+  background: url(content/shop.png) center / cover;
+  height: 20.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-banner__title {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.page-banner__breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.page-banner__breadcrumb a {
+  font-weight: 500;
+}
+
 /* ==== Buttons ==== */
 
 .btn {
@@ -90,6 +116,16 @@ body {
   border: 1px solid var(--color-primary);
   background-color: transparent;
   color: var(--color-primary);
+}
+
+.btn--outline-dark {
+  padding: 1rem 3rem;
+  border: 1px solid var(--color-black);
+  border-radius: 0.9375rem;
+  background: none;
+  color: var(--color-black);
+  font-size: 1.25rem;
+  font-weight: 400;
 }
 
 /* ==== Products ==== */
@@ -211,7 +247,7 @@ body {
   font-weight: 600;
 }
 
-/* ===== benefits ===== */
+/* ===== Benefits ===== */
 .benefits {
   margin-top: 5rem;
   padding-block: 3.25rem;
