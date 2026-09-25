@@ -92,6 +92,25 @@ body {
   color: var(--color-primary);
 }
 
+/* ==== Products ==== */
+
+.products {
+  margin-top: 59px;
+}
+
+.products__title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 39px;
+}
+
+.products__button {
+  justify-self: center;
+  margin-top: 32px;
+  padding: 12px 85px;
+  font-weight: 600;
+}
+
 /* ===== Product card ===== */
 
 .product-card {
