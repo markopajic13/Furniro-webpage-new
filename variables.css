@@ -3,6 +3,7 @@
 
   --color-black: #000000;
   --color-dark: #3a3a3a;
+  --color-gray-dark: #616161;
   --color-gray: #898989;
   --color-gray-light: #9f9f9f;
 
@@ -12,6 +13,9 @@
 
   /*radius*/
   --radius: 0.625rem;
+
+  /*layout*/
+  --gutter: 2rem;
 
   /*font*/
   --font-primary: "Poppins", sans-serif;

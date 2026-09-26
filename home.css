@@ -10,7 +10,7 @@
   grid-column: 7 / -1;
   padding: 4rem 2.5rem 2.5rem;
   margin-right: -2.5rem;
-  border-radius: 0.6rem;
+  border-radius: var(--radius);
   background-color: #fff3e3;
   color: var(--color-dark);
 }
@@ -31,7 +31,7 @@
 .hero__text {
   margin-top: 1rem;
   font-size: 1.125rem;
-  font-weight: var(--fw-medium);
+  font-weight: 500;
 }
 
 .hero__button {
@@ -60,13 +60,13 @@
 .range__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: var(--gutter);
   margin-top: 4rem;
 }
 
 .range__card img {
   width: 100%;
-  border-radius: 0.625rem;
+  border-radius: var(--radius);
 }
 
 .range__card-title {
@@ -98,7 +98,7 @@
 .rooms__text {
   margin-top: 0.5rem;
   font-weight: 500;
-  color: #616161;
+  color: var(--color-gray-dark);
 }
 
 .rooms__button {
@@ -136,7 +136,7 @@
 
 .rooms__caption-eyebrow {
   font-weight: 500;
-  color: #616161;
+  color: var(--color-gray-dark);
 }
 
 .rooms__caption-title {
@@ -201,7 +201,7 @@
 .setup__label {
   font-size: 20px;
   font-weight: 600;
-  color: #616161;
+  color: var(--color-gray-dark);
 }
 
 .setup__hashtag {
