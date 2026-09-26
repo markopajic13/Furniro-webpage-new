@@ -190,7 +190,7 @@
 /* ===== Setup ===== */
 
 .setup {
-  margin-top: 64px;
+  margin-top: 4rem;
   overflow: hidden;
 }
 
@@ -199,13 +199,13 @@
 }
 
 .setup__label {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   color: var(--color-gray-dark);
 }
 
 .setup__hashtag {
-  font-size: 40px;
+  font-size: 2.5rem;
   color: var(--color-dark);
 }
 
