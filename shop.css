@@ -44,7 +44,7 @@
   font-size: 1.25rem;
 }
 
-.shop-bar__select .shop-bar__label {
+.shop-bar__select + .shop-bar__label {
   margin-left: 0.75rem;
 }
 

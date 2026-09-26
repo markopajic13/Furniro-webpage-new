@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
     />
 
     <link rel="stylesheet" href="reset.css" />
@@ -64,7 +64,7 @@
                 <img src="content/filter.svg" alt="" />
                 Filter
               </button>
-              <button type="button" class="shop-bar__view shop-bar__view--active">
+              <button type="button" class="shop-bar__view">
                 <img src="content/view-grid.svg" alt="Grid view" />
               </button>
               <button type="button" class="shop-bar__view">
@@ -477,41 +477,43 @@
     </main>
 
     <!-- ===== Footer ===== -->
-    <footer class="site-footer grid">
-      <div class="site-footer__top subgrid">
-        <div class="site-footer__brand">
-          <p class="site-footer__logo">Furniro.</p>
-          <address>400 University Drive Suite 200 Coral Gables, FL 33134 USA</address>
+    <footer class="site-footer">
+      <div class="site-footer__inner grid">
+        <div class="site-footer__top subgrid">
+          <div class="site-footer__brand">
+            <p class="site-footer__logo">Furniro.</p>
+            <address>400 University Drive Suite 200 Coral Gables, FL 33134 USA</address>
+          </div>
+
+          <nav class="site-footer__links">
+            <h3 class="site-footer__title">Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+
+          <nav class="site-footer__help">
+            <h3 class="site-footer__title">Help</h3>
+            <ul>
+              <li><a href="#">Payment Options</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Privacy Policies</a></li>
+            </ul>
+          </nav>
+
+          <form class="site-footer__newsletter">
+            <h3 class="site-footer__title">Newsletter</h3>
+            <label for="newsletter-email" class="visually-hidden"> Email address </label>
+            <input type="email" id="newsletter-email" name="email" placeholder="Enter Your Email Address" required />
+            <button type="submit">Subscribe</button>
+          </form>
         </div>
 
-        <nav class="site-footer__links">
-          <h3 class="site-footer__title">Links</h3>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-
-        <nav class="site-footer__help">
-          <h3 class="site-footer__title">Help</h3>
-          <ul>
-            <li><a href="#">Payment Options</a></li>
-            <li><a href="#">Returns</a></li>
-            <li><a href="#">Privacy Policies</a></li>
-          </ul>
-        </nav>
-
-        <form class="site-footer__newsletter">
-          <h3 class="site-footer__title">Newsletter</h3>
-          <label for="newsletter-email" class="visually-hidden"> Email address </label>
-          <input type="email" id="newsletter-email" name="email" placeholder="Enter Your Email Address" required />
-          <button type="submit">Subscribe</button>
-        </form>
+        <p class="site-footer__copyright">2023 Furniro. All rights reserved</p>
       </div>
-
-      <p class="site-footer__copyright">2023 Furniro. All rights reserved</p>
     </footer>
   </body>
 </html>
