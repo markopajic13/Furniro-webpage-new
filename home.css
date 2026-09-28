@@ -1,16 +1,18 @@
 /* ===== Hero ===== */
 
 .hero {
+  position: relative;
   min-height: 44.75rem;
-  align-items: center;
-  background: url("content/hero.png") center;
+  background: url("content/hero.png") center / cover no-repeat;
 }
 
 .hero__card {
-  grid-column: 7 / -1;
+  position: absolute;
+  left: 46rem;
+  top: 9rem;
+  width: 39rem;
   padding: 4rem 2.5rem 2.5rem;
-  margin-right: -2.5rem;
-  border-radius: var(--radius);
+  border-radius: 0.625rem;
   background-color: #fff3e3;
   color: var(--color-dark);
 }
@@ -25,6 +27,7 @@
   font-size: 3.25rem;
   font-weight: 700;
   line-height: 1.25;
+  max-width: 25rem;
   color: var(--color-primary);
 }
 
@@ -50,6 +53,7 @@
 
 .range__title {
   font-size: 2rem;
+  font-weight: 600;
 }
 
 .range__subtitle {
@@ -67,10 +71,12 @@
 .range__card img {
   width: 100%;
   border-radius: var(--radius);
+  cursor: pointer;
 }
 
 .range__card-title {
   margin-top: 2rem;
+  font-weight: 500;
   font-size: 1.5rem;
 }
 
@@ -285,5 +291,3 @@
   width: 258px;
   height: 196px;
 }
-
-

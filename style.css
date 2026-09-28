@@ -137,13 +137,15 @@ body {
 .products__title {
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 39px;
+  margin-bottom: 2.4rem;
+  margin-top: 3.5rem;
+  font-weight: 600;
 }
 
 .products__button {
   justify-self: center;
   margin-top: 2rem;
-  padding: 0.75rem  85px;
+  padding: 0.75rem 85px;
   font-weight: 600;
 }
 
@@ -193,6 +195,7 @@ body {
 .product-card__title {
   margin-top: 1rem;
   font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .product-card__desc {
@@ -262,7 +265,7 @@ body {
 }
 
 .benefit__icon {
-  width: 3.75rem;
+  width: 4rem;
 }
 
 .benefit__title {
