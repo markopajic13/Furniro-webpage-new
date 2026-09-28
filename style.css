@@ -152,13 +152,10 @@ body {
 /* ===== Product card ===== */
 
 .product-card {
+  position: relative;
   grid-column: span 3;
   padding-bottom: 1rem;
   background-color: #f4f5f7;
-}
-
-.product-card__media {
-  position: relative;
 }
 
 .product-card__media img {
@@ -175,7 +172,7 @@ body {
   height: 3rem;
   border-radius: 50%;
   color: white;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .product-card__badge--sale {
@@ -236,18 +233,27 @@ body {
   background-color: white;
   color: var(--color-primary);
   font-weight: 600;
+  cursor: pointer;
 }
 
+.product-card__extras img {
+  width: 1rem;
+  height: 1rem;
+}
 .product-card__extras {
   display: flex;
   gap: 1.25rem;
 }
 
 .product-card__extras button {
+  display: flex;
+  align-items: center;
+  gap: 0.125rem;
   border: none;
   background: none;
   color: white;
   font-weight: 600;
+  cursor: pointer;
 }
 
 /* ===== Benefits ===== */
@@ -282,6 +288,7 @@ body {
 /* ===== Footer ===== */
 
 .site-footer {
+  margin-top: 3.125rem;
   padding-block: 3rem 2.25rem;
   border-top: 1px solid var(--color-border);
 }
@@ -343,6 +350,7 @@ body {
   border-bottom: 1px solid var(--color-black);
   background: none;
   font-size: 0.875rem;
+  cursor: pointer;
 }
 
 .site-footer__newsletter input {
@@ -358,4 +366,8 @@ body {
   margin-top: 3rem;
   padding-top: 2.25rem;
   border-top: 1px solid var(--color-border);
+}
+
+address {
+  max-width: 18rem;
 }
