@@ -21,3 +21,9 @@
   --font-primary: "Poppins", sans-serif;
   --font-logo: "Montserrat", sans-serif;
 }
+
+@media (max-width: 48rem) {
+  :root {
+    --gutter: 1rem;
+  }
+}
