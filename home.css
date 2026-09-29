@@ -182,7 +182,7 @@
   border-radius: 50%;
   background-color: white;
   color: var(--color-primary);
-  box-shadow: 0 0.25rem 0.875rem rgb(0 0 0 / 0.15);
+  box-shadow: 0 0.25rem 0.875rem rgb(0 0 0 / 0.25);
   cursor: pointer;
   margin-right: -1.5rem;
 }
@@ -343,16 +343,17 @@
   }
 
   .rooms__slide--featured {
-    grid-column: 1 / 10;
+    grid-column: 1 / 8;
     grid-row: 2;
   }
 
   .rooms__slide--featured > img {
+    aspect-ratio: 3 / 4;
     object-fit: cover;
   }
 
   .rooms__slide--next {
-    grid-column: 10 / -1;
+    grid-column: 8 / -1;
     grid-row: 2;
   }
 
@@ -395,5 +396,13 @@
 
   .range__card-title {
     margin-top: 1rem;
+  }
+
+  .rooms__slide--featured {
+    grid-column: 1 / 10;
+  }
+
+  .rooms__slide--next {
+    grid-column: 10 / -1;
   }
 }
