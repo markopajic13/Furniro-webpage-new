@@ -201,6 +201,7 @@
   height: 0.6875rem;
   border-radius: 50%;
   background-color: #d8d8d8;
+  cursor: pointer;
 }
 
 .rooms__dot--active {

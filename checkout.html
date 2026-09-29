@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
     />
 
     <link rel="stylesheet" href="reset.css" />
@@ -144,7 +144,10 @@
             </thead>
             <tbody>
               <tr>
-                <td class="order-summary__product">Asgaard sofa <span>× 1</span></td>
+                <td class="order-summary__product">
+                  Asgaard sofa
+                  <span><img src="content/X.svg" alt="x" class="order-summary__times" /> 1</span>
+                </td>
                 <td>Rs. 250,000.00</td>
               </tr>
             </tbody>
@@ -173,6 +176,11 @@
             </p>
 
             <label class="order-summary__option">
+              <input type="radio" name="payment" value="bank-transfer-2" />
+              Direct Bank Transfer
+            </label>
+
+            <label class="order-summary__option">
               <input type="radio" name="payment" value="cash-on-delivery" />
               Cash On Delivery
             </label>
@@ -180,7 +188,7 @@
 
           <p class="order-summary__privacy">
             Your personal data will be used to support your experience throughout this website, to manage access to your
-            account, and for other purposes described in our <a href="#">privacy policy</a>.
+            account, and for other purposes described in our <a href="#">privacy policy.</a>
           </p>
 
           <button type="submit" class="btn btn--outline-dark order-summary__button">Place order</button>
@@ -261,7 +269,7 @@
           </form>
         </div>
 
-        <p class="site-footer__copyright">2023 Furniro. All rights reserved</p>
+        <p class="site-footer__copyright">2023 furniro. All rights reserved</p>
       </div>
     </footer>
   </body>
