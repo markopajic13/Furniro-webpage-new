@@ -74,6 +74,10 @@ body {
   justify-content: flex-end;
   gap: 2.75rem;
 }
+.site-header__checkbox,
+.site-header__toggle {
+  display: none;
+}
 
 /* ==== Buttons ==== */
 
@@ -364,4 +368,147 @@ body {
 
 address {
   max-width: 17rem;
+}
+
+@media (max-width: 48rem) {
+  html {
+    font-size: 75%;
+  }
+
+  body {
+    margin: 1rem;
+  }
+  .page-banner {
+    height: 12rem;
+  }
+
+  .page-banner__title {
+    font-size: 2rem;
+  }
+  .site-header {
+    height: auto;
+    padding-block: 1rem;
+  }
+
+  .site-header__toggle {
+    display: block;
+    grid-column: 10 / -1;
+    justify-self: end;
+    cursor: pointer;
+  }
+
+  .site-header__toggle img {
+    max-width: none;
+  }
+
+  .site-header__nav,
+  .site-header__icons {
+    display: none;
+    grid-column: 1 / -1;
+    background-color: var(--color-beige);
+  }
+
+  .site-header__nav {
+    margin-top: 1rem;
+    padding-inline: 1.5rem;
+    text-align: center;
+  }
+
+  .site-header__nav ul {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+  }
+
+  .site-header__nav a {
+    display: block;
+    padding-block: 1rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .site-header__nav a:hover {
+    color: var(--color-primary);
+  }
+
+  .site-header__icons {
+    justify-content: center;
+    padding-block: 1.5rem;
+  }
+
+  #menu-toggle:checked ~ .site-header__nav,
+  #menu-toggle:checked ~ .site-header__icons {
+    display: flex;
+  }
+
+  .product-card {
+    grid-column: span 4;
+  }
+
+  address {
+    max-width: 12rem;
+  }
+
+  .site-footer__top {
+    row-gap: 2.5rem;
+  }
+
+  .site-footer__brand,
+  .site-footer__newsletter {
+    grid-column: 1 / -1;
+  }
+
+  .site-footer__links {
+    grid-column: 1 / 7;
+  }
+
+  .site-footer__help {
+    grid-column: 7 / -1;
+  }
+
+  .site-footer__title {
+    margin-bottom: 1.5rem;
+  }
+
+  .site-footer ul {
+    gap: 1rem;
+  }
+
+  .site-footer__brand address {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  .product-card {
+    grid-column: span 6;
+  }
+
+  .benefits {
+    padding-block: 3rem;
+    align-items: center;
+  }
+
+  .benefits__inner {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    gap: 2rem 1rem;
+    padding-inline: 1rem;
+
+  }
+
+  .benefit__icon {
+    width: 2.5rem;
+  }
+
+  .benefit__title {
+    font-size: 1rem;
+  }
+
+  .product-card__extras {
+    display: flex;
+    gap: 1.25rem;
+    flex-direction: column;
+    align-items: center;
+  }
 }

@@ -8,7 +8,7 @@
 
 .hero__card {
   position: absolute;
-  left: 46rem;
+  right: 5rem;
   top: 9rem;
   width: 39rem;
   padding: 4rem 2.5rem 2.5rem;
@@ -182,7 +182,7 @@
   border-radius: 50%;
   background-color: white;
   color: var(--color-primary);
-  box-shadow: 0 0.25rem 0.875rem rgb(0 0 0 / 0.15);
+  box-shadow: 0 0.25rem 0.875rem rgb(0 0 0 / 0.25);
   cursor: pointer;
   margin-right: -1.5rem;
 }
@@ -307,4 +307,102 @@
   left: 1083px;
   width: 258px;
   height: 196px;
+}
+
+@media (max-width: 48rem) {
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .hero__card {
+    position: static;
+    width: 100%;
+    max-width: 39rem;
+    padding: 2rem 1.5rem;
+  }
+  .hero__title {
+    font-size: 2rem;
+  }
+  .setup {
+    display: none;
+  }
+  .rooms__intro {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    margin-right: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .rooms__title {
+    width: auto;
+    font-size: 1.75rem;
+  }
+
+  .rooms__slide--featured {
+    grid-column: 1 / 8;
+    grid-row: 2;
+  }
+
+  .rooms__slide--featured > img {
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+  }
+
+  .rooms__slide--next {
+    grid-column: 8 / -1;
+    grid-row: 2;
+  }
+
+  .rooms__slide--next img {
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+  }
+
+  .rooms__slide--peek,
+  .rooms__nav {
+    display: none;
+  }
+
+  .rooms__dots {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+
+  .rooms__caption {
+    left: 1rem;
+    bottom: 1rem;
+    padding: 1rem;
+  }
+
+  .rooms__caption-title {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 30rem) {
+  .range__card {
+    grid-column: 1 / -1;
+  }
+  .range__card img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  .range__card-title {
+    margin-top: 1rem;
+  }
+
+  .rooms__slide--featured {
+    grid-column: 1 / 10;
+  }
+
+  .rooms__slide--next {
+    grid-column: 10 / -1;
+  }
 }

@@ -24,6 +24,7 @@
 .page-banner__breadcrumb a {
   font-weight: 500;
 }
+
 /* ===== search =====*/
 .shop-bar {
   padding-block: 1.375rem;
@@ -123,4 +124,56 @@
 
 .pagination__link--next {
   width: 6.125rem;
+}
+
+@media (max-width: 30rem) {
+  .page-banner {
+    height: 12rem;
+  }
+
+  .page-banner__title {
+    font-size: 2rem;
+  }
+  .shop-bar__inner {
+    padding-inline: 1.2rem;
+  }
+  .shop-bar__browse,
+  .shop-bar__sort {
+    grid-column: 1 / -1;
+  }
+
+  .shop-bar__browse {
+    gap: 1rem;
+  }
+
+  .shop-bar__tools {
+    gap: 1rem;
+    padding-right: 1rem;
+  }
+
+  .shop-bar__sort {
+    justify-content: flex-start;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .shop-bar__filter,
+  .shop-bar__label,
+  .shop-bar__select {
+    font-size: 1rem;
+    max-width: 8rem;
+  }
+
+  .shop-bar__select {
+    height: 2.5rem;
+  }
+
+  .shop-bar__select--wide {
+    width: auto;
+    flex: 1;
+  }
+
+  .shop-bar__select + .shop-bar__label {
+    margin-left: 0.5rem;
+  }
 }
