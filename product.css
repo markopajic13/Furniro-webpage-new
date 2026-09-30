@@ -230,9 +230,8 @@
 }
 
 .product-info__image {
-  grid-column: span 6;
+  grid-column:span 6;
   display: grid;
-  place-items: center;
   border-radius: var(--radius);
   background-color: var(--color-beige);
 }
@@ -266,6 +265,10 @@
   .product-gallery__thumbnail {
     flex: 1;
   }
+  .product-gallery__thumbnail img {
+    height: 3.5rem;
+    object-fit: contain;
+  }
   .product-gallery__main {
     height: 20rem;
   }
@@ -296,5 +299,9 @@
   .single-product__actions .btn {
     flex: 1;
     padding-inline: 1rem;
+  }
+
+  .product-info__image {
+    grid-column: 1/-1;
   }
 }

@@ -205,3 +205,15 @@
   width: 20rem;
   margin: 2.5rem auto 0;
 }
+
+@media (max-width: 30rem) {
+  .checkout {
+    margin-top: 3rem;
+  }
+
+  .billing,
+  .order-summary {
+    grid-column: 1/-1;
+    padding-inline: 0;
+  }
+}
