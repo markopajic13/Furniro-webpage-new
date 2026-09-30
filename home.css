@@ -74,6 +74,15 @@
   cursor: pointer;
 }
 
+.range__card {
+  transition: transform 0.3s ease;
+  border-radius: var(--radius);
+}
+
+.range__card:hover {
+  transform: scale(1.05);
+}
+
 .range__card-title {
   margin-top: 2rem;
   font-weight: 500;
